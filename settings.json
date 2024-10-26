@@ -70,8 +70,15 @@
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   "editor.tokenColorCustomizations": {
-    "comments": "#2ef16c",
+    "comments": "#53f1ba9f",
     "textMateRules": [
+      {
+        "scope": "storage.type",
+        "settings": {
+          "foreground": "#ffcba3",
+          "fontStyle": "italic"
+        }
+      },
       {
         "scope": "variable.other.readwrite",
         "settings": {
@@ -87,17 +94,24 @@
         }
       },
       {
-        "scope": "storage.type.accessor.get.cs",
+        "scope": "variable.other.object",
         "settings": {
-          "foreground": "#d8db39",
-          "fontStyle": "bold",
+          "foreground": "#f194ff",
+          "fontStyle": "italic"
         }
       },
       {
-        "scope": "storage.type.accessor.set.cs",
+        "scope": "variable.other.object.property",
         "settings": {
-          "foreground": "#d8db39",
-          "fontStyle": "bold"
+          "foreground": "#7BD88F",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "storage.type.accessor",
+        "settings": {
+          "foreground": "#FFCBA3",
+          "fontStyle": "italic"
         }
       }
     ]

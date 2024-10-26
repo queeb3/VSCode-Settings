@@ -1,0 +1,138 @@
+{
+  "files.autoSaveWhenNoErrors": true,
+  "files.autoSave": "afterDelay",
+  "files.defaultLanguage": "csharp",
+  "files.trimTrailingWhitespace": true,
+  "debug.console.wordWrap": true,
+  "debug.enableStatusBarColor": true,
+  "debug.terminal.clearBeforeReusing": true,
+  "explorer.compactFolders": true,
+  "explorer.enableDragAndDrop": true,
+  "explorer.sortOrder": "filesFirst",
+  "explorer.confirmDelete": false,
+  "omnisharp.organizeImportsOnFormat": true,
+  "omnisharp.enableEditorConfigSupport": false,
+  "csharp.format.enable": true,
+  "csharp.suppressDotnetInstallWarning": true,
+  "csharp.semanticHighlighting.enabled": false,
+  "dotnet.typeMembers.propertyGenerationBehavior": "preferAutoProperties",
+  "dotnet.highlighting.highlightRelatedJsonComponents": false,
+  "dotnet.highlighting.highlightRelatedRegexComponents": false,
+  "security.workspace.trust.banner": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.zoomLevel": 1,
+  "window.commandCenter": true,
+  "javascript.suggest.enabled": false,
+  "typescript.suggest.enabled": false,
+  "cSpell.caseSensitive": true,
+  "cSpell.language": "en, en-GB",
+  "cSpell.userWords": [
+    "Avalonia",
+    "cooldown",
+    "Cooldown",
+    "Cooldowns",
+    "debuff",
+    "debuffs",
+    "dont",
+    "dotnet",
+    "eclass",
+    "fizzbuzz",
+    "Monokai",
+    "nums",
+    "omnisharp",
+    "readwrite",
+    "regen",
+    "regens",
+    "Slithe",
+    "subceed",
+    "Teehee"
+  ],
+  "errorLens.followCursor": "allLinesExceptActive",
+  "errorLens.scrollbarHackEnabled": true,
+  "git.autofetch": true,
+  "git.autorefresh": true,
+  "workbench.colorCustomizations": {},
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "right",
+  "workbench.settings.applyToAllProfiles": [
+    "csharp.semanticHighlighting.enabled"
+  ],
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.sortImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#2ef16c",
+    "textMateRules": [
+      {
+        "scope": "variable.other.readwrite",
+        "settings": {
+          "foreground": "#c194ff",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "variable.other",
+        "settings": {
+          "foreground": "#c194ff",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "storage.type.accessor.get.cs",
+        "settings": {
+          "foreground": "#d8db39",
+          "fontStyle": "bold",
+        }
+      },
+      {
+        "scope": "storage.type.accessor.set.cs",
+        "settings": {
+          "foreground": "#d8db39",
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+  "editor.semanticTokenColorCustomizations": {},
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.fontLigatures": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.quickSuggestionsDelay": 5,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.cursorStyle": "block",
+  "editor.cursorSurroundingLines": 30,
+  "editor.cursorSurroundingLinesStyle": "all",
+  "editor.renderWhitespace": "all",
+  "editor.fontWeight": "400",
+  "editor.fontSize": 18,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.formatOnType": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.formatOnSave": true,
+  "editor.lineHeight": 1,
+  "editor.lineNumbers": "relative",
+  "editor.renderLineHighlight": "gutter",
+  "editor.suggest.selectionMode": "whenTriggerCharacter",
+  "editor.suggest.preview": true,
+  "editor.suggest.matchOnWordStartOnly": true,
+  "editor.snippetSuggestions": "top",
+  "editor.semanticHighlighting.enabled": false,
+  "output.smartScroll.enabled": true,
+  "editor.fastScrollSensitivity": 8,
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelScrollSensitivity": 3,
+  "editor.minimap.autohide": true,
+  "remote.downloadExtensionsLocally": true,
+  "remote.tunnels.access.preventSleep": true
+}

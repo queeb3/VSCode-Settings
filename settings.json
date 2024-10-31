@@ -20,6 +20,7 @@
 
   // explorer settings
   "explorer.enableDragAndDrop": true,
+  "explorer.confirmDragAndDrop": false,
   "explorer.sortOrder": "filesFirst",
   "explorer.compactFolders": true,
   "explorer.confirmDelete": false,
@@ -27,7 +28,7 @@
 
   //------------------------------------------------------------------------------
 
-  // workspace settings
+  // security settings
   "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.banner": "always",
 
@@ -54,12 +55,32 @@
 
   // workbench settings
   "workbench.colorTheme": "Bearded Theme feat. Gold D Raynh",
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "workbench.activityBar.location": "top",
   "workbench.list.smoothScrolling": true,
   "workbench.iconTheme": "bearded-icons",
   "workbench.sideBar.location": "right",
   "workbench.settings.applyToAllProfiles": [
     "csharp.semanticHighlighting.enabled"
   ],
+  // editor
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.editor.titleScrollbarSizing": "default",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editor.alwaysShowEditorActions": false,
+  "workbench.editor.untitled.labelFormat": "name",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.tabSizingFixedMaxWidth": 80,
+  "workbench.editor.tabSizingFixedMinWidth": 38,
+  "workbench.editor.tabActionLocation": "left",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.restoreViewState": true,
+  "workbench.editor.sharedViewState": true,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.wrapTabs": true,
 
   //------------------------------------------------------------------------------
 
@@ -72,6 +93,7 @@
   // editor settings
   "editor.accessibilitySupport": "off",
   "editor.linkedEditing": true,
+  "editor.glyphMargin": false, // breakpoints and ruler widgets
   // suggestions
   "editor.suggest.selectionMode": "whenTriggerCharacter",
   "editor.wordBasedSuggestions": "matchingDocuments",
@@ -136,21 +158,33 @@
   // rendering and highlighting
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.bracketPairColorization.enabled": true,
+
   "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.semanticHighlighting.enabled": false,
   "editor.copyWithSyntaxHighlighting": true,
+
   "editor.renderControlCharacters": true,
   "editor.emptySelectionClipboard": true,
+
   "editor.padding.bottom": 0,
   "editor.padding.top": 16,
+
+  "editor.wrappingIndent": "deepIndent",
+  "editor.wrappingStrategy": "advanced",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 90,
   // font
   "editor.fontFamily": "ProggyClean Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
-  "editor.fontSize": 15,
+  "editor.fontSize": 18,
   // minimap
   "editor.minimap.autohide": true,
   "editor.minimap.enabled": false,
+  // breadcrumbs
+  "breadcrumbs.filePath": "last",
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.icons": true,
   // white space
   "editor.experimentalWhitespaceRendering": "font",
   "editor.renderWhitespace": "none",
@@ -159,9 +193,10 @@
   "editor.renderLineHighlightOnlyWhenFocus": false,
   "editor.renderLineHighlight": "gutter",
   "editor.renderFinalNewline": "off",
+  "editor.lightbulb.enabled": "off",
   "editor.lineNumbers": "interval",
-  "editor.lineHeight": 15,
   "editor.indentSize": "tabSize",
+  "editor.lineHeight": 14,
   "editor.tabSize": 4,
   // cursor
   "editor.cursorSmoothCaretAnimation": "explicit",
@@ -256,7 +291,8 @@
     "regens",
     "Slithe",
     "subceed",
-    "Teehee"
+    "Teehee",
+    "mathed"
   ],
 
   // csharp settings

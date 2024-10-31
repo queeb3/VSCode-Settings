@@ -19,6 +19,7 @@
   //------------------------------------------------------------------------------
 
   // explorer settings
+  "explorer.openEditors.sortOrder": "editorOrder",
   "explorer.enableDragAndDrop": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.sortOrder": "filesFirst",
@@ -100,11 +101,11 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.suggest.matchOnWordStartOnly": true,
   "editor.suggestOnTriggerCharacters": true,
-  "editor.suggestSelection": "recentlyUsed",
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.suggest.filterGraceful": true,
   "editor.suggest.insertMode": "insert",
   "editor.suggest.showClasses": true,
+  "editor.suggestSelection": "first",
   "editor.snippetSuggestions": "top",
   "editor.quickSuggestionsDelay": 5,
   "editor.suggest.showColors": true,
@@ -172,7 +173,7 @@
   "editor.wrappingIndent": "deepIndent",
   "editor.wrappingStrategy": "advanced",
   "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 90,
+  "editor.wordWrapColumn": 120,
   // font
   "editor.fontFamily": "ProggyClean Nerd Font",
   "editor.fontLigatures": true,

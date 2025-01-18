@@ -7,7 +7,12 @@
   "files.trimFinalNewlines": true,
   "files.autoSave": "afterDelay",
 
-  "dotnet.defaultSolution": "SlitheCore.sln",
+  "dotnet.defaultSolution": "SliLib.sln",
+
+  "files.exclude": {
+    "**/obj": true,
+    "**/bin": true
+  },
 
   //------------------------------------------------------------------------------
 
@@ -22,7 +27,7 @@
   "explorer.openEditors.sortOrder": "editorOrder",
   "explorer.enableDragAndDrop": true,
   "explorer.confirmDragAndDrop": false,
-  "explorer.sortOrder": "filesFirst",
+  "explorer.sortOrder": "modified",
   "explorer.compactFolders": true,
   "explorer.confirmDelete": false,
   "explorer.autoReveal": true,
@@ -40,7 +45,7 @@
   "zenMode.hideActivityBar": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.showTabs": "multiple",
-  "zenMode.centerLayout": false,
+  "zenMode.centerLayout": true,
   "zenMode.hideStatusBar": true,
   "zenMode.fullScreen": true,
   "zenMode.restore": true,
@@ -55,7 +60,7 @@
   //------------------------------------------------------------------------------
 
   // workbench settings
-  "workbench.colorTheme": "Bearded Theme feat. Gold D Raynh",
+  "workbench.colorTheme": "Bearded Theme Black & Ruby",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.activityBar.iconClickBehavior": "focus",
   "workbench.activityBar.location": "top",
@@ -71,16 +76,16 @@
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editor.alwaysShowEditorActions": false,
   "workbench.editor.untitled.labelFormat": "name",
-  "workbench.editor.pinnedTabSizing": "compact",
-  "workbench.editor.tabSizingFixedMaxWidth": 80,
-  "workbench.editor.tabSizingFixedMinWidth": 38,
+  "workbench.editor.tabSizingFixedMaxWidth": 130,
+  "workbench.editor.tabSizingFixedMinWidth": 100,
+  "workbench.editor.pinnedTabSizing": "shrink",
   "workbench.editor.tabActionLocation": "left",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.restoreViewState": true,
   "workbench.editor.sharedViewState": true,
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.enablePreview": true,
-  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.tabSizing": "fixed",
   "workbench.editor.wrapTabs": true,
 
   //------------------------------------------------------------------------------
@@ -94,19 +99,21 @@
   // editor settings
   "editor.accessibilitySupport": "off",
   "editor.linkedEditing": true,
-  "editor.glyphMargin": false, // breakpoints and ruler widgets
+  "editor.tabFocusMode": false,
+  "editor.glyphMargin": true, // breakpoints and ruler widgets
   // suggestions
+  "editor.suggest.snippetsPreventQuickSuggestions": true,
   "editor.suggest.selectionMode": "whenTriggerCharacter",
   "editor.wordBasedSuggestions": "matchingDocuments",
-  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnCommitCharacter": true,
   "editor.suggest.matchOnWordStartOnly": true,
   "editor.suggestOnTriggerCharacters": true,
-  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.acceptSuggestionOnEnter": "on",
   "editor.suggest.filterGraceful": true,
+  "editor.snippetSuggestions": "inline",
   "editor.suggest.insertMode": "insert",
   "editor.suggest.showClasses": true,
   "editor.suggestSelection": "first",
-  "editor.snippetSuggestions": "top",
   "editor.quickSuggestionsDelay": 5,
   "editor.suggest.showColors": true,
   "editor.suggest.showIcons": true,
@@ -173,12 +180,13 @@
   "editor.wrappingIndent": "deepIndent",
   "editor.wrappingStrategy": "advanced",
   "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 120,
+  "editor.wordWrapColumn": 300,
   // font
   "editor.fontFamily": "ProggyClean Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
   "editor.fontSize": 18,
+  "terminal.integrated.fontSize": 18,
   // minimap
   "editor.minimap.autohide": true,
   "editor.minimap.enabled": false,
@@ -202,13 +210,27 @@
   // cursor
   "editor.cursorSmoothCaretAnimation": "explicit",
   "editor.cursorSurroundingLinesStyle": "all",
-  "editor.cursorSurroundingLines": 20,
+  "editor.cursorSurroundingLines": 10,
   "editor.cursorBlinking": "expand",
   "editor.cursorStyle": "block",
   // custom textmate token
   "editor.tokenColorCustomizations": {
-    "comments": "#53f1ba9f",
+    "comments": "#DAA520",
     "textMateRules": [
+      {
+        "scope": "storage.type.class",
+        "settings": {
+          "foreground": "#A167FF",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "storage.type.enum",
+        "settings": {
+          "foreground": "#A167FF",
+          "fontStyle": "italic"
+        }
+      },
       {
         "scope": "storage.modifier",
         "settings": {
@@ -219,14 +241,44 @@
       {
         "scope": "storage.type.accessor",
         "settings": {
-          "foreground": "#f6c478d3",
+          "foreground": "#d0d322a1",
           "fontStyle": "italic"
         }
       },
       {
         "scope": "entity.name.function",
         "settings": {
-          "foreground": "#7afd0ed2"
+          "foreground": "#63fb04ad"
+        }
+      },
+      {
+        "scope": "entity.name.type",
+        "settings": {
+          "foreground": "#2bb7f8cc"
+        }
+      },
+      {
+        "scope": "variable.other.object",
+        "settings": {
+          "foreground": "#de5d2e"
+        }
+      },
+      {
+        "scope": "variable.other.readwrite",
+        "settings": {
+          "foreground": "#de5d2e"
+        }
+      },
+      {
+        "scope": "entity.name.variable",
+        "settings": {
+          "foreground": "#de5d2e"
+        }
+      },
+      {
+        "scope": "entity.name.variable.parameter",
+        "settings": {
+          "foreground": "#fa5198c0"
         }
       }
     ]
@@ -293,7 +345,9 @@
     "Slithe",
     "subceed",
     "Teehee",
-    "mathed"
+    "mathed",
+    "Ents",
+    "ents"
   ],
 
   // csharp settings
@@ -304,5 +358,6 @@
   "csharp.semanticHighlighting.enabled": false,
   "dotnet.typeMembers.propertyGenerationBehavior": "preferAutoProperties",
   "dotnet.highlighting.highlightRelatedJsonComponents": false,
-  "dotnet.highlighting.highlightRelatedRegexComponents": false
+  "dotnet.highlighting.highlightRelatedRegexComponents": false,
+  "cSpell.words": ["crits", "Crits"]
 }
